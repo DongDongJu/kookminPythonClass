@@ -29,7 +29,7 @@ def chat_client():
                     sys.exit()
                 else :
                     sys.stdout.write(data)
-                    sys.stdout.write('you-> ')
+                    sys.stdout.write('[Me] ')
                     sys.stdout.flush()
                     #print("여기1")
             
@@ -37,7 +37,7 @@ def chat_client():
                 msg = sys.stdin.readline()
                 result = msg.encode("utf-8")
                 s.send(result)
-                sys.stdout.write('you-> ')
+                sys.stdout.write('[Me] ')
                 sys.stdout.flush()
                 #print("여기2")
 
